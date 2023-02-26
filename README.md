@@ -50,19 +50,27 @@ All code are in the folders:
 * /3_testmimic_cicFriday
 
 
-* To run the experiments, execute the scripts in the respective folders.
+
+To run the experiments, follow steps below and execute the scripts in the respective folders.
 
 _Step 1_
-\[3_testmimic_xxx\]	Preprocess data by running ```sh light_run_xxx.sh; preprocess.py```
+
+1a. \[3_testmimic_xxx\]	Preprocess data by running ```sh light_run_xxx.sh; preprocess.py```
 
 _Step 2_		
+
 2a. \[3_mimicshift (GAN)	Train generator. ```python mimic(cond_train)1.py```
+
 2b. \[3_mimicshift (GAN)	Generate mimic atk data. ```mimic_load-1.ipynb```
 		
 _Step 3_
+
 3a.	\[3_testmimic_xxx\]	Eval N/D filters. ```sh light_run_xxx.sh```
+
 3b.	\[3_testmimic_xxx\] Eval iter classifier. ```online_classifier.ipynb, online_classifier_inf.ipynb```
+
 3c.	\[3_testmimic_xxx\] (atk with/without N. no counter)	Eval iter classifier. ```online_classifier.ipynb, online_classifier_inf.ipynb```
+
 3d.	\[3_testmimic_xxx\] (countermeasure)	saving all countermeasure results. ```eval_it.ipynb```
 
 
